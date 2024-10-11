@@ -1,6 +1,6 @@
-# Freshcart
+# Freshcart - NextJs Ecommerce Website Template
 
-nextJs Ecommerce website template
+NextJs Ecommerce website template landing page
 
 ### Support
 
