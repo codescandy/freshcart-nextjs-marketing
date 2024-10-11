@@ -1,0 +1,16 @@
+// Text
+
+.text-inherit {
+    color: var(--#{$prefix}gray-800);
+}
+
+.text-reset {
+    &:hover {
+        color: var(--#{$prefix}primary) !important;
+    }
+}
+
+.text-inverse {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}

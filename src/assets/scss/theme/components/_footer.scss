@@ -1,0 +1,34 @@
+// footer
+
+.footer {
+    background-color: var(--#{$prefix}light);
+    padding: 4rem 0;
+    .nav {
+        .nav-item {
+            .nav-link {
+                color: var(--#{$prefix}gray-600);
+                padding: 0;
+                &:hover {
+                    color: var(--#{$prefix}primary);
+                }
+            }
+        }
+    }
+    .social-links {
+        color: var(--#{$prefix}gray-600);
+
+        &:hover {
+            color: var(--#{$prefix}primary);
+        }
+    }
+}
+
+.btn-social {
+    color: var(--#{$prefix}gray-500);
+    border: 1px solid var(--#{$prefix}gray-500);
+    border-radius: 0.5rem;
+    &:hover {
+        color: var(--#{$prefix}primary);
+        border: 1px solid var(--#{$prefix}primary);
+    }
+}

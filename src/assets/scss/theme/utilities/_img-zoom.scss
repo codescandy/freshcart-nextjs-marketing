@@ -1,0 +1,40 @@
+// zoom
+
+.img-zoom {
+	border-radius: 0.5rem;
+	overflow: hidden;
+	img {
+		transition: transform 0.5s ease;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+// zoom img
+div.zoom {
+	& img:hover {
+		opacity: 0;
+	}
+	img {
+		transition: opacity 0.5s;
+		display: block;
+		width: 100%;
+	}
+	background-position: 50% 50%;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	cursor: zoom-in;
+	border-radius: 0.5rem;
+}
+
+// cover img
+
+.thumbnail-cover-img {
+	height: inherit;
+	max-width: 100%;
+	@media (min-width: 768px) {
+		height: 200px;
+	}
+}

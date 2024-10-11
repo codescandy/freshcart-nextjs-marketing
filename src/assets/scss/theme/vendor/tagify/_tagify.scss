@@ -1,0 +1,41 @@
+// Tagify
+
+.tagify {
+	border-color: var(--#{$prefix}$border-color) !important;
+	background-color: var(--#{$prefix}white) !important;
+	line-height: 1.5;
+	border-radius: 0.5rem;
+	--tag-bg: var(--#{$prefix}gray-300) !important;
+	--tag-hover: var(--#{$prefix}light-primary) !important;
+	--tag-invalid-color: var(--#{$prefix}light-danger) !important;
+	--tag-text-color: var(--#{$prefix}dark) !important;
+	--tags-focus-border-color: var(--#{$prefix}primary) !important;
+	--tag-pad: 0.6em 0.5em;
+	&__tag {
+		z-index: inherit;
+		border-radius: 0.5rem !important;
+		&:hover:not([readonly]) {
+			& div::before {
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+}
+.tagify--focus {
+	border-color: var(--#{$prefix}primary) !important;
+	box-shadow: var(--#{$prefix}input-focus-box-shadow);
+}
+
+.tagify__tag {
+	background-color: var(--#{$prefix}gray-300);
+	color: var(--#{$prefix}white);
+	border-radius: 0.25rem;
+}
+
+.tagify__tag__removeBtn:hover {
+	color: var(--#{$prefix}danger) !important;
+	background: var(--#{$prefix}light-danger) !important;
+}

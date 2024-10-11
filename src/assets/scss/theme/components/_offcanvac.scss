@@ -1,0 +1,17 @@
+// Offcanvac
+
+@media (min-width: 992px){
+    .offcanvas-collapse {
+        display: block;
+        position: static;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        background-color: transparent;
+        visibility: visible;
+    }
+    }

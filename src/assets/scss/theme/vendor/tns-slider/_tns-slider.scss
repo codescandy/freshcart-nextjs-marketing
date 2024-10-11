@@ -1,0 +1,38 @@
+// tiny slider
+
+// product tools
+.product-tools {
+  position: relative;
+  .thumbnails {
+    margin: 10px 0;
+    text-align: center;
+  }
+  img {
+    border-radius: 6px;
+    max-width: 100%;
+  }
+}
+
+.product {
+  .tns-item {
+    img {
+      border-radius: 6px;
+      width: 100%;
+    }
+  }
+}
+
+.thumbnails {
+  li {
+    img {
+      height: auto;
+    }
+  }
+  .tns-nav-active {
+    .thumbnails-img {
+      background: none;
+      border: 2px solid var(--#{$prefix}primary);
+      border-radius: 0.5rem;
+    }
+  }
+}

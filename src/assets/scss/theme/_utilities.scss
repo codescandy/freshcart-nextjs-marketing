@@ -1,0 +1,136 @@
+$utilities: (
+  "border": (
+    property: border,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-start": (
+    property: border-left,
+    class: border-start,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-end": (
+    property: border-right,
+    class: border-end,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-top": (
+    property: border-top,
+    class: border-top,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-bottom": (
+    property: border-bottom,
+    class: border-bottom,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "width": (
+    property: width,
+    responsive: true,
+    class: w,
+    values: (
+      0: 0%,
+      5: 5%,
+      10: 10%,
+      15: 15%,
+      20: 20%,
+      25: 25%,
+      30: 30%,
+      40: 40%,
+      45: 45%,
+      50: 50%,
+      65: 65%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "background-color": (
+    property: background-color,
+    class: bg,
+    local-vars: (
+      "bg-opacity": 1
+    ),
+    values:
+      map-merge(
+        $theme-colors,
+        (
+          "transparent": transparent,
+          "body-secondary": rgba(var(--#{$prefix}secondary-bg-rgb), var(--#{$prefix}bg-opacity)),
+          "body-tertiary": rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity)),
+          "body-emphasis": rgba(var(--#{$prefix}emphasis-bg-rgb), var(--#{$prefix}bg-opacity)),
+          "gray-100": $gray-100,
+          "gray-200": $gray-200,
+          "gray-300": $gray-300,
+          "gray-400": $gray-400,
+          "gray-500": $gray-500,
+          "gray-600": $gray-600,
+          "gray-700": $gray-700,
+          "gray-800": $gray-800,
+          "gray-900": $gray-900
+        )
+      )
+  ),
+  "position": (
+    property: position,
+    values: static relative absolute fixed sticky,
+    responsive: true
+  ),
+  "top": (
+    property: top,
+    responsive: true,
+    values: $position-values
+  ),
+  "bottom": (
+    property: bottom,
+    responsive: true,
+    values: $position-values
+  ),
+  "start": (
+    property: left,
+    class: start,
+    values: $position-values
+  ),
+  "end": (
+    property: right,
+    responsive: true,
+    class: end,
+    values: $position-values
+  ),
+  "translate-middle": (
+    property: transform,
+    responsive: true,
+    class: translate-middle,
+    values: (
+      null: translate(-50%, -50%),
+      x: translateX(-50%),
+      y: translateY(-50%)
+    )
+  )
+);
+
+// Utilities classes
+@import "./utilities/_text.scss";
+@import "./utilities/_icon-shape.scss";
+@import "./utilities/_border.scss";
+@import "./utilities/_img-zoom.scss";
+@import "./utilities/_simplebar.scss";

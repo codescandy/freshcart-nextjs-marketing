@@ -1,0 +1,11 @@
+// Collapse
+
+.chevron-down {
+  display: inline-block;
+  transition: 0.5s ease-in-out;
+}
+
+// Expanded
+[aria-expanded="true"] .chevron-down {
+  transform: rotate(180deg);
+}

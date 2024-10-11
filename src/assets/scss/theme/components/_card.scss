@@ -1,0 +1,245 @@
+// card
+
+// card product
+.card-product {
+  transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  .card-hidden {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    margin-top: -1.25rem;
+    transition: all 0.15s ease-in-out;
+    border-radius: 0.4375rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    border-right: 1px solid var(--#{$prefix}gray-300);
+    border-bottom: 1px solid var(--#{$prefix}gray-300);
+    border-left: 1px solid var(--#{$prefix}gray-300);
+  }
+  .product-action-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    display: flex;
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    -webkit-transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99),
+      -webkit-transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+    transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99),
+      -webkit-transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+    transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99), transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+    transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99), transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99),
+      -webkit-transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+  }
+  .card-product-action {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 9;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0px 5px 12px rgb(0 0 0 / 12%);
+    box-shadow: 0px 5px 12px rgb(0 0 0 / 12%);
+    border: 1px solid var(--#{$prefix}primary);
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+
+    .card-product-action {
+      opacity: 1;
+      visibility: visible;
+    }
+    .card-hidden {
+      opacity: 1;
+      visibility: visible;
+    }
+    .product-action-btn {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .btn-action {
+    background-color: var(--#{$prefix}white);
+    color: var(--#{$prefix}gray-800);
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 34px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    box-shadow: $box-shadow;
+    &:hover {
+      background-color: var(--#{$prefix}primary);
+      color: var(--#{$prefix}white);
+    }
+  }
+}
+
+// card product
+.card-product-v2 {
+  z-index: 1;
+  cursor: pointer;
+  .product-content-fade {
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: -1px;
+    right: -1px;
+    opacity: 0;
+    background-color: var(--#{$prefix}white);
+    -webkit-transition: opacity 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    transition: opacity 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    will-change: opacity;
+    -webkit-box-shadow: 5px 15px 30px rgb(62 68 90 / 10%);
+    box-shadow: 5px 15px 30px rgb(62 68 90 / 10%);
+    pointer-events: none;
+    z-index: -1;
+  }
+  -webkit-transition: z-index 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+  transition: z-index 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+  .product-fade-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0 0.9375rem;
+    opacity: 0;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    visibility: hidden;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    -webkit-transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    will-change: opacity, transform;
+  }
+  .product-action-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    display: flex;
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    -webkit-transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99),
+      -webkit-transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+    transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99),
+      -webkit-transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+    transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99), transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+    transition: opacity 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99), transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99),
+      -webkit-transform 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+  }
+  .btn-action {
+    background-color: var(--#{$prefix}white);
+    color: var(--#{$prefix}gray-800);
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 34px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    box-shadow: $box-shadow;
+    &:hover {
+      background-color: var(--#{$prefix}primary);
+      color: var(--#{$prefix}white);
+    }
+  }
+
+  &:hover {
+    .product-fade-block {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    .product-content-fade {
+      opacity: 1;
+    }
+    .product-action-btn {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .product-content-fade.border-info {
+    border: 1px solid #0aad0a !important;
+    border-radius: 0.5rem;
+  }
+  &:hover.card {
+    border: none;
+    z-index: 2;
+  }
+}
+
+// card image
+.card-image {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  &:hover {
+    box-shadow: $box-shadow !important;
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+// card lift
+
+.card-lift {
+  transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  &:hover {
+    -webkit-box-shadow: 0px 5px 12px rgb(0 0 0 / 12%);
+    box-shadow: 0px 5px 12px rgb(0 0 0 / 12%);
+ 
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    &.card {
+      background-color: var(--#{$prefix}transparent);
+      color: $primary;
+    }
+    & svg {
+      fill: $primary;
+    }
+  }
+}
+
+// card lg
+.card-lg {
+  box-shadow: $box-shadow-lg;
+  border-radius: $border-radius-xl;
+  border: 0px;
+}

@@ -1,0 +1,110 @@
+// form
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-switch {
+  display: flex;
+  align-items: center;
+
+  .form-check-input {
+    height: 1.6em;
+    width: 3em;
+    border-color: var(--#{$prefix}gray-200);
+    margin-right: 0.5rem;
+  }
+}
+
+.form-focus-none {
+  &.form-control {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  &.form-select {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+// input spinner
+
+.input-spinner {
+  .button-minus,
+  .button-plus {
+    height: 2rem;
+    width: 1.8rem;
+    border-color: var(--#{$prefix}gray-200);
+    background-color: transparent;
+    &:hover {
+      background-color: var(--#{$prefix}gray-200);
+      border-color: var(--#{$prefix}gray-200);
+    }
+  }
+  .form-input {
+    width: 2rem !important;
+
+    height: 100%;
+    min-height: 2rem;
+    text-align: center;
+    border: 1px solid var(--#{$prefix}gray-200);
+    background: 0 0;
+  }
+}
+
+// file upload
+.file-upload {
+  position: relative;
+  overflow: hidden;
+
+  input.file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    height: 100%;
+  }
+}
+
+// Input Phone
+
+.input-phone {
+  position: relative;
+  input {
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-left: 72px;
+    width: 100%;
+  }
+  &:before {
+    content: "\F4E7";
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    color: var(--#{$prefix}gray-600);
+    font-size: 18px;
+    left: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &::after {
+    color: var(--#{$prefix}gray-600);
+    content: "+91 - ";
+    font-size: 14px;
+    left: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

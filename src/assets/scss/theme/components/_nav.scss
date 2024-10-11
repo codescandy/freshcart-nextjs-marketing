@@ -1,0 +1,186 @@
+// nav
+
+// nav scroll
+.nav-scroll {
+  border-bottom: 1px solid var(--#{$prefix}gray-300);
+  @media (max-width: 990px) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      @media (max-width: 990px) {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+// nav cateogry
+.nav-category {
+  .nav-item {
+    .nav-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $dark;
+      padding: 0.5rem 0;
+      &:hover {
+        color: var(--#{$prefix}primary);
+      }
+    }
+  }
+}
+
+// Nav line bottom tab (.nav-lb-tab)
+.nav-lb-tab {
+  border-bottom: 1px solid var(--#{$prefix}gray-300);
+  @media (max-width: 576px) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .nav-item {
+    margin-right: 2rem;
+    .nav-link {
+      border-bottom: 2px solid transparent;
+      border-radius: 0px;
+      padding: 16px 0px;
+      margin-bottom: -1px;
+      font-weight: 500;
+      color: var(--#{$prefix}gray-600);
+      white-space: nowrap;
+      &.active {
+        background-color: transparent;
+        border-bottom: 2px solid var(--#{$prefix}primary);
+        color: var(--#{$prefix}primary);
+      }
+      &:hover {
+        background-color: transparent;
+        border-bottom: 2px solid var(--#{$prefix}primary);
+        color: var(--#{$prefix}primary);
+      }
+    }
+  }
+}
+
+// nav pills
+.nav-pills-dark {
+  .nav-item {
+    .nav-link {
+      color: var(--#{$prefix}gray-800);
+      background-color: transparent;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      margin-bottom: .25rem;
+      &:hover {
+        color: $dark;
+        background-color: var(--#{$prefix}light);
+      }
+      &.active {
+        color: var(--#{$prefix}white);
+        background-color: $dark;
+      }
+    }
+  }
+}
+
+// nav pills
+.nav-pills-light {
+  @media (max-width: 576px) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .nav-item {
+    margin-right: 8px;
+    .nav-link {
+      color: var(--#{$prefix}gray-800);
+      background-color: var(--#{$prefix}gray-200);
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      white-space: nowrap;
+      &:hover {
+        color: var(--#{$prefix}white);
+        background-color: var(--#{$prefix}primary);
+      }
+      &.active {
+        color: var(--#{$prefix}white);
+        background-color: var(--#{$prefix}primary);
+      }
+    }
+  }
+}
+
+// nav links
+
+.nav-links {
+  .nav-item {
+    .nav-link {
+      padding: 0.25rem 0rem;
+      white-space: nowrap;
+      color: var(--#{$prefix}gray-800);
+      &:hover {
+        color: var(--#{$prefix}primary);
+      }
+      &.active {
+        color: var(--#{$prefix}primary);
+      }
+    }
+  }
+}
+
+// Bottom line nav
+
+.nav-line-bottom {
+  border-bottom: 1px solid var(--#{$prefix}gray-200);
+  @media (max-width: 576px) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: var(--#{$prefix}gray-600);
+      border-radius: 0px;
+      margin-bottom: -1px;
+      padding: 1.2rem;
+      font-weight: 500;
+      white-space: nowrap;
+      @media (max-width: 576px) {
+        padding: 0.8rem;
+      }
+      &.active {
+        color: var(--#{$prefix}primary);
+        background-color: transparent;
+        border-bottom: 1px solid var(--#{$prefix}primary);
+        @media (max-width: 576px) {
+          padding: 0.747rem;
+        }
+      }
+      &:hover {
+        color: var(--#{$prefix}primary);
+        background-color: transparent;
+        border-bottom: 1px solid var(--#{$prefix}primary);
+      }
+      .badge {
+        line-height: 1.4;
+      }
+    }
+  }
+}

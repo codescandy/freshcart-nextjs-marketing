@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      @@include("partials/head/head-meta.html")
+      <title>NextJs eCommerce Website Template - FreshCart</title>
+
+      <link href="@@webRoot/node_modules/slick-carousel/slick/slick.css" rel="stylesheet" />
+      <link href="@@webRoot/node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+      <link href="@@webRoot/node_modules/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
+
+      @@include("partials/head/head-links.html") @@include("partials/head/analytics-code.html") @@include("partials/head/clarity.html")
+   </head>
+
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md position-md-absolute w-100 border-top border-4 border-primary">
+         <div class="container px-0">
+            <!-- navbar brand -->
+            <a class="navbar-brand" href="@@webRoot/index.html">
+               <img src="@@webRoot/assets/images/logo/freshcart-logo.svg" alt="freshcart" />
+            </a>
+            <!-- button -->
+
+            <button
+               class="navbar-toggler collapsed"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="icon-bar top-bar mt-0"></span>
+               <span class="icon-bar middle-bar"></span>
+               <span class="icon-bar bottom-bar"></span>
+            </button>
+
+            <!-- collapse -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <!-- navbar -->
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                  <!-- nav item -->
+                  <li class="nav-item">
+                     <a class="nav-link me-4 border-bottom-0" href="https://freshcart-next-js-template.netlify.app/docs" target="_blank">Documentation</a>
+                  </li>
+                  <!-- nav item -->
+                  <li class="nav-item">
+                     <a class="nav-link border-bottom-0" href="https://codescandy.com/contact-us/" target="_blank">Support</a>
+                  </li>
+               </ul>
+               <div>
+                  <!-- btn -->
+                  <a href="https://themes.getbootstrap.com/product/freshcart-nextjs-ecommerce-website-template/" target="_blank" rel="nofollow" class="btn btn-primary">Purchase</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <main>
+         <!-- hero section-->
+         <section class="bg-light pt-md-15 pt-lg-16 pt-10" style="background: url(../assets/images/overview/light-patten.svg) no-repeat; background-position: center; background-size: cover">
+            <div class="container">
+               <!-- row -->
+               <div class="row">
+                  <div class="offset-lg-1 col-lg-10 col-12">
+                     <!-- text -->
+                     <div class="text-center d-flex flex-column gap-12">
+                        <div class="d-flex flex-column gap-4">
+                           <h1 class="mb-0 fw-bold">FreshCart - NextJs eCommerce Website Template</h1>
+                           <p class="lead mb-0 mx-xl-17 mx-md-14">A powerful NextJs library to develop e-commerce web sites with a huge set of components and templates.</p>
+                           <div>
+                              <a href="#layouts" class="btn btn-dark">View Demos</a>
+                           </div>
+                        </div>
+
+                        <!-- img -->
+                        <div>
+                           <img src="../assets/images/overview/landing-img-1.jpg" alt="landing" class="img-fluid rounded-top-3" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- hero section-->
+         <!--home pages -->
+         <section class="py-lg-15 py-10" id="layouts">
+            <div class="container">
+               <!-- row -->
+               <div class="row">
+                  <div class="offset-lg-2 col-lg-8 col-md-10 offset-md-1 col-12">
+                     <!-- text -->
+                     <div class="text-center mb-lg-10 mb-6 d-flex flex-column gap-6">
+                        <div>
+                           <span class="badge rounded-pill bg-primary-subtle text-primary-emphasis px-4 py-2 fs-6">Ready-to-Use</span>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                           <h2 class="mb-0">Stunning Homepage Layouts</h2>
+                           <p class="mb-0 mx-xxl-9">
+                              Clean and Minimalistic Homepage Design for your online stores. Simplified layouts with ample white space for a clean and modern look. Minimalist navigation menus and
+                              straightforward user interfaces
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row gy-lg-10 g-6">
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/" target="_blank">
+                              <img src="../assets/images/overview/home-page-1.jpg" alt="page-1" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h3 class="mb-0 h5">
+                           <a href="https://freshcart-next-js-template.netlify.app/" target="_blank" class="text-inherit">Default</a>
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-2" target="_blank">
+                              <img src="../assets/images/overview/home-page-2.jpg" alt="page-2" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h3 class="mb-0 h5">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-2" target="_blank" class="text-inherit">Modern</a>
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-3" target="_blank">
+                              <img src="../assets/images/overview/home-page-3.jpg" alt="page-3" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h3 class="mb-0 h5">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-3" target="_blank" class="text-inherit">Creative</a>
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-4" target="_blank">
+                              <img src="../assets/images/overview/home-page-4.jpg" alt="page-4" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h3 class="mb-0 h5">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-4" target="_blank" class="text-inherit">Local Store</a>
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-5" target="_blank">
+                              <img src="../assets/images/overview/home-page-5.jpg" alt="page-5" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h3 class="mb-0 h5">
+                           <a href="https://freshcart-next-js-template.netlify.app/homepage-5" target="_blank" class="text-inherit">Minimalist</a>
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="#!">
+                              <img src="../assets/images/overview/homepage-coming-soon.jpg" alt="page-6" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h3 class="mb-0 h5">
+                           <a href="#" class="text-inherit">Coming Soon</a>
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--home pages -->
+         <!--features-->
+         <section class="py-lg-15 py-10">
+            <div class="container">
+               <!-- row -->
+               <div class="row">
+                  <div class="offset-lg-2 col-lg-8 col-12">
+                     <!-- text -->
+                     <div class="text-center mb-lg-10 mb-6">
+                        <div class="d-flex flex-column gap-6">
+                           <div>
+                              <span class="badge rounded-pill bg-primary-subtle text-primary-emphasis px-4 py-2 fs-6">Features</span>
+                           </div>
+
+                           <h2 class="mb-0">FreshCart E-commerce Features</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- row -->
+               <div class="row g-6">
+                  <div class="col-md-6">
+                     <div class="bg-light p-6 h-100 rounded d-flex flex-column gap-6 gap-lg-8">
+                        <!-- text -->
+                        <div class="d-flex flex-column gap-4">
+                           <h3 class="mb-0 fs-4">Mini Cart</h3>
+                           <p class="mb-0 pe-xxl-12">
+                              A "mini cart" is a design element commonly found in e-commerce websites and online shopping experiences. It provides a summarized view of the items a user has added to
+                              their shopping cart without redirecting them to a separate cart page.
+                           </p>
+                        </div>
+                        <!-- image -->
+                        <div>
+                           <img src="../assets/images/overview/feature-1.png" alt="feature-1" class="img-fluid rounded w-100" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="bg-light rounded p-6 h-100 d-flex flex-column gap-6 gap-lg-8">
+                        <!-- text -->
+                        <div class="d-flex flex-column gap-4">
+                           <h3 class="mb-0 fs-4">Quick view</h3>
+                           <p class="mb-0 pe-xxl-15">
+                              "Quick view" is a feature commonly implemented in e-commerce websites to provide users with a fast and convenient way to preview product details without leaving the
+                              current page.
+                           </p>
+                        </div>
+                        <!-- image -->
+                        <div>
+                           <img src="../assets/images/overview/feature-2.png" alt="feature-2" class="img-fluid rounded w-100" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                     <div class="bg-light p-6 h-100 rounded d-flex flex-column gap-6 gap-lg-8">
+                        <!-- image -->
+                        <div class="d-flex flex-column gap-4">
+                           <h3 class="mb-0 fs-4">Filter / Sorting Options</h3>
+                           <p class="mb-0 pe-xxl-12">
+                              Filter options are crucial for helping users refine and narrow down their search or exploration of content on websites, particularly in e-commerce, product listings, and
+                              content-heavy platforms.
+                           </p>
+                        </div>
+                        <!-- image -->
+                        <div>
+                           <img src="../assets/images/overview/feature-3.png" alt="feature-3" class="img-fluid rounded w-100" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="bg-light p-6 h-100 rounded">
+                        <!-- text -->
+                        <div class="d-flex flex-column gap-6 gap-lg-8">
+                           <h3 class="mb-0 fs-4">Category Dropdown</h3>
+
+                           <!-- image -->
+                           <div>
+                              <img src="../assets/images/overview/feature-4.png" alt="feature-4" class="img-fluid rounded w-100" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12">
+                     <div class="bg-light p-6 h-100 rounded d-flex flex-column gap-6 gap-lg-8">
+                        <div>
+                           <!-- text -->
+                           <div class="d-flex flex-column gap-4 pe-lg-18 me-lg-18">
+                              <h3 class="mb-0 fs-4">Mega Menu</h3>
+                              <p class="mb-0">
+                                 A mega menu is a large, multi-column drop-down menu that typically displays a variety of options and information, providing an efficient and organized way to navigate
+                                 through a website's content.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- image -->
+                        <div>
+                           <img src="../assets/images/overview/feature-5.png" alt="feature-5" class="img-fluid rounded w-100" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--features-->
+         <!--shope pages-->
+         <section class="bg-light py-lg-15 py-10">
+            <div class="container">
+               <!-- row -->
+               <div class="row">
+                  <div class="col-12">
+                     <!-- text -->
+                     <div class="text-center mb-lg-10 mb-6 d-flex flex-column gap-6">
+                        <div>
+                           <span class="badge rounded-pill bg-info-subtle text-info-emphasis px-4 py-2 fs-6">Product pages</span>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                           <h2 class="mb-0">E-commerce Shop Pages</h2>
+                           <p class="mb-0">"Shop pages" typically refer to the main pages on e-commerce websites where users can browse and explore products.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- row -->
+               <div class="row gy-lg-10 g-6">
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/shop/shop-grid" target="_blank">
+                              <img src="../assets/images/overview/shop-grid-filter.jpg" alt="page 1" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h5 class="mb-0">
+                           <a href="https://freshcart-next-js-template.netlify.app/shop/shop-grid" target="_blank" class="text-inherit">Shop Grid - Filter</a>
+                        </h5>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/shop/shop-list" target="_blank">
+                              <img src="../assets/images/overview/shop-list-filter.jpg" alt="page 1" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h5 class="mb-0">
+                           <a href="https://freshcart-next-js-template.netlify.app/shop/shop-list" target="_blank" class="text-inherit">Shop List Filter</a>
+                        </h5>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="d-flex flex-column gap-6">
+                        <!-- image -->
+                        <div class="card card-lift">
+                           <a href="https://freshcart-next-js-template.netlify.app/shop/shop-fullwidth" target="_blank">
+                              <img src="../assets/images/overview/shop-wide.jpg" alt="page 1" class="img-fluid rounded border w-100" />
+                           </a>
+                        </div>
+                        <h5 class="mb-0">
+                           <a href="https://freshcart-next-js-template.netlify.app/shop/shop-fullwidth" target="_blank" class="text-inherit">Shop Wide</a>
+                        </h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--shope pages-->
+         <!-- theme -->
+         <section class="py-lg-15 py-10">
+            <div class="container">
+               <!-- row -->
+               <div class="row">
+                  <div class="col-12">
+                     <!-- text -->
+                     <div class="text-center mb-lg-10 mb-6 d-flex flex-column gap-6">
+                        <div>
+                           <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis fs-6 px-4 py-2">Awesome</span>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                           <h2 class="mb-0">FreshCart Theme Features</h2>
+                           <p class="mb-0">We provide impressive features for your website. You can easily build your store and e-commerce website. You will love it.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- row -->
+               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                  <!-- col -->
+                  <div class="col border-end-md border-bottom">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- icon -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 20" fill="none">
+                              <g clip-path="url(#clip0_4091_4672)">
+                                 <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M4.98488 0C3.61546 0 2.60217 1.19643 2.64753 2.49396C2.69105 3.74053 2.63451 5.35498 2.22732 6.6716C1.81892 7.99207 1.1282 8.82854 0 8.93594L0 10.1484C1.1282 10.2558 1.81892 11.0923 2.22732 12.4127C2.63451 13.7294 2.69105 15.3438 2.64753 16.5904C2.60217 17.8877 3.61546 19.0843 4.98508 19.0843H19.0169C20.3864 19.0843 21.3995 17.8879 21.3541 16.5904C21.3106 15.3438 21.3671 13.7294 21.7743 12.4127C22.1829 11.0923 22.8718 10.2558 24 10.1484V8.93594C22.8718 8.82854 22.1829 7.99207 21.7743 6.6716C21.3671 5.35519 21.3106 3.74053 21.3541 2.49396C21.3995 1.19663 20.3864 0 19.0169 0L4.98468 0L4.98488 0ZM16.2712 11.7476C16.2712 13.5342 14.9361 14.6178 12.7206 14.6178H8.94915C8.84127 14.6178 8.7378 14.575 8.66152 14.4989C8.58523 14.4227 8.54237 14.3194 8.54237 14.2117V4.8726C8.54237 4.76491 8.58523 4.66163 8.66152 4.58548C8.7378 4.50933 8.84127 4.46655 8.94915 4.46655H12.6991C14.5464 4.46655 15.7588 5.46543 15.7588 6.99908C15.7588 8.07552 14.9433 9.03928 13.9041 9.20799V9.26423C15.3187 9.41914 16.2712 10.3969 16.2712 11.7476ZM12.3094 5.75372H10.1589V8.7857H11.9701C13.3702 8.7857 14.1423 8.22291 14.1423 7.21693C14.1423 6.27428 13.4784 5.75372 12.3094 5.75372ZM10.1589 9.98882V13.3302H12.3885C13.8462 13.3302 14.6184 12.7463 14.6184 11.649C14.6184 10.5514 13.8246 9.98862 12.2947 9.98862H10.1589V9.98882Z"
+                                    fill="#0AAD0A" />
+                              </g>
+                              <defs>
+                                 <clipPath id="clip0_4091_4672">
+                                    <rect width="24" height="19.0843" fill="white" />
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- content -->
+                           <h5 class="mb-0">Bootstrap 5.x,</h5>
+                           <p class="mb-0">Every code snippet you ll get is written in Bootstrap 5 in a way that seamlessly integrates with UI.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- col -->
+                  <div class="col border-end-lg border-bottom">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- icon -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path
+                                 d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path d="M12 18H12.01" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- text -->
+                           <h5 class="mb-0">Fully Responsive</h5>
+                           <p class="mb-0">Professionally designed, fully responsive, expertly crafted component examples you can drop into your projects.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- col -->
+                  <div class="col border-bottom border-end-md border-end-lg-0">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- svg -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path
+                                 d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path
+                                 d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path d="M4.92969 4.92993L9.16969 9.16993" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M14.8301 14.8301L19.0701 19.0701" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M14.8301 9.16993L19.0701 4.92993" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M14.8301 9.16989L18.3601 5.63989" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.92969 19.0701L9.16969 14.8301" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- content -->
+                           <h5 class="mb-0">Great Support</h5>
+                           <p class="mb-0">With our support center to help you with whatever issue or questions you might have.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- col -->
+                  <div class="col border-end-lg border-bottom">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- svg -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path
+                                 d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path d="M2 12H22" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                 d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- content -->
+                           <h5 class="mb-0">W3 Validated</h5>
+                           <p class="mb-0">Markup validation is an important step towards ensuring the technical quality of web pages.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- col -->
+                  <div class="col border-end-md border-bottom">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- icon -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M2 17L12 22L22 17" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M2 12L12 17L22 12" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- content -->
+                           <h5 class="mb-0">Slick Carousel</h5>
+                           <p class="mb-0">Slick is a responsive carousel that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more!</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col border-bottom">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- svg -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path
+                                 d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path
+                                 d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2V2Z"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- content -->
+                           <h5 class="mb-0">Well Documented</h5>
+                           <p class="mb-0">We provide intuitive and detailed documentation, you will certainly master this template easily.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col border-end-md border-bottom border-bottom-lg-0">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- icon -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M22 2L11 13" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- text -->
+                           <h5 class="mb-0">High Performance</h5>
+                           <p class="mb-0">Our coding standards ensures this theme is lighter and it will loads your site faster.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col border-end-lg border-bottom border-bottom-lg-0">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- icon -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <g clip-path="url(#clip0_4091_4548)">
+                                 <path
+                                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                    stroke="#0AAD0A"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                 <path
+                                    d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15V15Z"
+                                    stroke="#0AAD0A"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                 <clipPath id="clip0_4091_4548">
+                                    <rect width="24" height="24" fill="white" />
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <!-- content -->
+                           <h5 class="mb-0">Highly Customizable?</h5>
+                           <p class="mb-0">Create something unique & beautifully tailored to your needs In only a couple minutes.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col border-end-md border-end-lg-0">
+                     <div class="p-8 d-flex flex-column gap-6">
+                        <!-- icon -->
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path
+                                 d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path
+                                 d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+                                 stroke="#0AAD0A"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                           <h5 class="mb-0">Free Lifetime Updates</h5>
+                           <p class="mb-0">We work hard every day to perfect the products. You will get it for free for a lifetime.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- theme -->
+         <!-- template -->
+         <section class="pt-15 pb-4 bg-dark">
+            <div class="container">
+               <!-- row -->
+               <div class="row justify-content-center text-center">
+                  <!-- col -->
+                  <div class="col-lg-7 col-xxl-6">
+                     <div class="d-flex flex-column gap-lg-14 gap-6">
+                        <div class="d-flex flex-column gap-6">
+                           <div class="d-flex flex-column gap-4">
+                              <!-- heading -->
+                              <h1 class="mx-md-15 mx-lg-0 mb-0 fw-bold text-white">Build fast. Launch faster. with FreshCart Template</h1>
+                              <!-- text -->
+                              <p class="mx-md-15 mx-lg-6 mb-0">
+                                 Start working with , the Impressive design, powerful features, and easy customization making website building faster, easier and more professional than ever.
+                              </p>
+                           </div>
+
+                           <div>
+                              <a href="https://themes.getbootstrap.com/product/freshcart-nextjs-ecommerce-website-template/" target="_blank" rel="nofollow" class="btn btn-primary">
+                                 Purchase FreshCart
+                              </a>
+                           </div>
+                        </div>
+                        <!-- col -->
+                        <div>
+                           <p class="fs-6 mb-0">
+                              Copyright 2024 © FreshCart eCommerce NextJs Template. Made with Love from
+                              <a href="https://codescandy.com/" target="_blank">Codescandy</a>
+                              .
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- template -->
+      </main>
+      <!-- Javascript-->
+      @@include("./partials/scripts.html")
+      <!-- Javascript-->
+
+      @@include("partials/scripts.html")
+   </body>
+</html>

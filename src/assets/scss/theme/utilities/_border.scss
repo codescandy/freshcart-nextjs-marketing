@@ -1,0 +1,5 @@
+// Border dashed
+
+.border-dashed {
+  border: 1px dashed var(--#{$prefix}gray-300) !important;
+}
